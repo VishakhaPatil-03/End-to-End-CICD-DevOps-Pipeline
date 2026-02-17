@@ -268,7 +268,18 @@ This ensures:
   <img src="Screenshot/Grafana_dashboard.png" width="900"/>
 </p>
 
----      
+---    
+
+# 🍽️ Food Application
+The application is deployed on AWS EKS using Kubernetes and exposed via LoadBalancer service.
+
+### 🔹 Zomato Application UI
+
+<p align="center">
+  <img src="Screenshot/Zomato_image_2.png" width="900"/>
+</p>
+
+---
 
 📈 Key Achievements
 ===================
