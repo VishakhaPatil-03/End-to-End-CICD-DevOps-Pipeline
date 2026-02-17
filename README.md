@@ -100,7 +100,7 @@ The solution follows industry best practices including:
 
 🛠️ Technology Stack
 ====================
-## 🛠️ Technology Stack
+
 
 | Category | Tools Used |
 |----------|------------|
@@ -176,7 +176,6 @@ Security is integrated into every stage of the pipeline:
 *   **Filesystem Security Scanning** via Trivy
     
 *   **Container Image Analysis** via Docker Scout
-*   
 
 This ensures vulnerabilities are detected before production deployment.
 
