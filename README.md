@@ -148,14 +148,20 @@ The Jenkins pipeline automates the entire software delivery lifecycle:
 11.  Container Deployment
     
 12.  Email Notification with Build Logs
-    
+
+### 🔹 Jenkins Pipeline Execution
+
+<p align="center">
+  <img src="Screenshot/Jenkins_pipeline.png" width="900"/>
+</p>
+
+---
 
 This ensures:
 
 ✔ Code Quality Enforcement
 ✔ Security Vulnerability Detection
 ✔ Automated Build & Deployment
-
 ✔ Continuous Feedback
 
 🔐 DevSecOps Integration
@@ -170,7 +176,7 @@ Security is integrated into every stage of the pipeline:
 *   **Filesystem Security Scanning** via Trivy
     
 *   **Container Image Analysis** via Docker Scout
-    
+*   
 
 This ensures vulnerabilities are detected before production deployment.
 
@@ -184,19 +190,15 @@ This ensures vulnerabilities are detected before production deployment.
 *   Version control maintained at registry level
     
 *   Deployment via Docker container & Kubernetes
-    
 
-☸️ Kubernetes Deployment (AWS EKS)
-==================================
+  ### 🔹 DockerHub Image Repository
 
-The application is deployed on AWS EKS using:
+<p align="center">
+  <img src="Screenshot/docker_hub_image_push.png" width="900"/>
+</p>
 
-*   Managed Node Groups
-    
-*   LoadBalancer Service
-    
-*   Namespace isolation
-    
+---
+
 
 Deployment is automated using GitOps principles via ArgoCD.
 
@@ -210,8 +212,16 @@ Deployment is automated using GitOps principles via ArgoCD.
 *   Auto-Sync enabled
     
 *   Automatic deployment upon Git commit
-    
 
+  
+### 🔹 ArgoCD Application Dashboard
+
+<p align="center">
+  <img src="Screenshot/argoCD_GitHub.png" width="900"/>
+</p>
+
+---
+    
 This ensures:
 
 ✔ Declarative Infrastructure
@@ -232,6 +242,14 @@ This ensures:
     *   Jenkins metrics
         
     *   Kubernetes metrics
+
+      ### 🔹 Prometheus Dashboard
+
+<p align="center">
+  <img src="Screenshot/Prometheus_dashboard.png" width="900"/>
+</p>
+
+---
         
 
 🔹 Grafana
@@ -242,8 +260,15 @@ This ensures:
     
     *   Node Exporter Dashboard (ID: 1860)
         
-    *   Jenkins Performance Dashboard (ID: 9964)
-        
+    *   Jenkins Performance Dashboard (ID:8080)
+
+      ### 🔹 Grafana Dashboard
+
+<p align="center">
+  <img src="Screenshot/Grafana_dashboard.png" width="900"/>
+</p>
+
+---      
 
 📈 Key Achievements
 ===================
