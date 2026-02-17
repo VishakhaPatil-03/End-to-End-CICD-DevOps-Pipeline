@@ -1,68 +1,300 @@
-# 🚀 **DevOps Project: ZOMATO Clone App Deployment**
+🚀 End-to-End CICD DevOps Pipeline 
+===================================================================
 
-In this **DevOps project**, I demonstrate how to **deploy a ZOMATO Clone App** using a variety of modern DevOps tools and services.
+📌 Project Overview
+-------------------
 
-## 🛠️ Tools & Services Used:
+This project demonstrates a **production-ready DevOps implementation** for deploying a Zomato Clone application using modern CI/CD practices, DevSecOps security scanning, containerization, Kubernetes orchestration, and full-stack monitoring on AWS Cloud.
 
-1. **GitHub** ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-2. **Jenkins** ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-3. **SonarQube** ![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)
-4. **Docker** ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-5. **Kubernetes** ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-6. **Prometheus** ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-7. **Grafana** ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-8. **ArgoCD** ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
-9. **OWASP** ![OWASP](https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=owasp&logoColor=white)
-10. **Trivy** ![Trivy](https://img.shields.io/badge/Trivy-00979D?style=flat-square&logo=trivy&logoColor=white)
+The solution follows industry best practices including:
 
----
+*   Continuous Integration & Continuous Deployment (CI/CD)
+    
+*   Static Code Analysis & Security Scanning (DevSecOps)
+    
+*   Docker Containerization
+    
+*   Kubernetes (EKS) Deployment
+    
+*   GitOps using ArgoCD
+    
+*   Infrastructure Monitoring & Observability
+    
 
-### Project Stages:
+🏗️ Architecture Flow
+=====================
 
-1. **Stage 1** - Deployment of App to Docker Container
-2. **Stage 2** - Deployment of App to K8S Cluster with Monitoring
+                    ┌───────────────────┐
+                    │      GitHub       │
+                    │  (Source Code)    │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │      Jenkins      │
+                    │   (CI Pipeline)   │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │     SonarQube     │
+                    │   (Code Quality)  │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │ OWASP Dependency  │
+                    │       Check       │
+                    │ (Vulnerability)   │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │       Trivy       │
+                    │ (Security Scan)   │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │   Docker Build    │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │   Docker Scout    │
+                    │ (Image Analysis)  │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │     DockerHub     │
+                    │  (Image Registry) │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │ Container Deploy  │
+                    │  (Docker Runtime) │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │    Prometheus     │
+                    │ (Metrics Collect) │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │      Grafana      │
+                    │  (Visualization)  │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │      AWS EKS      │
+                    │ (K8s via ArgoCD)  │
+                    └───────────────────┘
 
----
 
-### 📂 GitHub Repo Link:  
-[**ZOMATO Clone DevOps Project**](#)
 
-### 📹 DevOps Project Video Link:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/GyoI6-I68aQ)
 
-### 📺 Docker Playlist Video Link:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLs-PsDpuAuTeNx3OgGQ1QrpNBo-XE6VBh)
+🛠️ Technology Stack
+====================
+## 🛠️ Technology Stack
 
----
+| Category | Tools Used |
+|----------|------------|
+| Version Control | Git, GitHub |
+| CI/CD | Jenkins |
+| Code Quality | SonarQube |
+| Security Scanning | OWASP Dependency Check, Trivy, Docker Scout |
+| Containerization | Docker |
+| Registry | DockerHub |
+| Cloud | AWS EC2, AWS EKS |
+| GitOps | ArgoCD |
+| Monitoring | Prometheus, Node Exporter |
+| Visualization | Grafana |
+| Package Manager | Helm |
 
-## 📂 Other DevOps Projects
 
-### 🟠 **SWIGGY App Project**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/x55z7rk0NAU)
 
-### 🔵 **SonarQube Video Link**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=sonarqube&logoColor=white)](https://youtu.be/ScdedztTaAU)
+⚙️ CI/CD Pipeline Implementation
+================================
 
-### 🟡 **Nexus Video Link**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=nexus&logoColor=white)](https://youtu.be/opJAfDOCZuI)
+The Jenkins pipeline automates the entire software delivery lifecycle:
 
----
+### 🔹 Pipeline Stages
 
-## Connect with me on LinkedIn:  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kastro-kiran/)
+1.  Workspace Cleanup
+    
+2.  Source Code Checkout
+    
+3.  SonarQube Code Analysis
+    
+4.  Quality Gate Validation
+    
+5.  NPM Dependency Installation
+    
+6.  OWASP Dependency Vulnerability Scan
+    
+7.  Trivy File System Scan
+    
+8.  Docker Image Build
+    
+9.  Docker Tag & Push to DockerHub
+    
+10.  Docker Scout Image Analysis
+    
+11.  Container Deployment
+    
+12.  Email Notification with Build Logs
+    
 
-## Join the WhatsApp Group for DevOps technical discussions!
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EGw6ZlwUHZc82cA0vXFnwm) 
+This ensures:
 
----
+✔ Code Quality Enforcement
+✔ Security Vulnerability Detection
+✔ Automated Build & Deployment
 
-### Feedback Request:  
+✔ Continuous Feedback
 
-After deploying the app, please share your opinion on LinkedIn along with the Project link and tag me on LinkedIn. Help the video reach wider DevOps enthusiasts.
+🔐 DevSecOps Integration
+========================
 
----
+Security is integrated into every stage of the pipeline:
 
-## Happy learning!  
-<img src="https://media.licdn.com/dms/image/v2/D5603AQHJB_lF1d9OSw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718971147172?e=1735776000&v=beta&t=HC_e0eOufPvf8XQ0P7iI9GDm9hBSIh5FwQaGsL_8ivo" alt="Kastro Profile Image" width="100" height="100" style="border-radius:50%;">
+*   **Static Code Analysis** via SonarQube
+    
+*   **Dependency Vulnerability Scanning** via OWASP
+    
+*   **Filesystem Security Scanning** via Trivy
+    
+*   **Container Image Analysis** via Docker Scout
+    
 
-KASTRO KIRAN V
+This ensures vulnerabilities are detected before production deployment.
+
+🐳 Containerization Strategy
+============================
+
+*   Application is containerized using Docker
+    
+*   Image tagged and pushed to DockerHub
+    
+*   Version control maintained at registry level
+    
+*   Deployment via Docker container & Kubernetes
+    
+
+☸️ Kubernetes Deployment (AWS EKS)
+==================================
+
+The application is deployed on AWS EKS using:
+
+*   Managed Node Groups
+    
+*   LoadBalancer Service
+    
+*   Namespace isolation
+    
+
+Deployment is automated using GitOps principles via ArgoCD.
+
+🔁 GitOps with ArgoCD
+=====================
+
+*   GitHub repository connected to ArgoCD
+    
+*   Kubernetes manifests stored in /Kubernetes directory
+    
+*   Auto-Sync enabled
+    
+*   Automatic deployment upon Git commit
+    
+
+This ensures:
+
+✔ Declarative Infrastructure
+✔ Version Controlled Deployment
+✔ Automated Rollbacks
+
+📊 Monitoring & Observability
+=============================
+
+🔹 Prometheus
+
+*   Installed on dedicated Monitoring EC2
+    
+*   Scrapes:
+    
+    *   Node Exporter metrics
+        
+    *   Jenkins metrics
+        
+    *   Kubernetes metrics
+        
+
+🔹 Grafana
+
+*   Connected to Prometheus data source
+    
+*   Dashboards imported:
+    
+    *   Node Exporter Dashboard (ID: 1860)
+        
+    *   Jenkins Performance Dashboard (ID: 9964)
+        
+
+📈 Key Achievements
+===================
+
+✔ End-to-End CI/CD Automation
+✔ Integrated DevSecOps Pipeline
+✔ Containerized Microservice Deployment
+✔ GitOps-Based Kubernetes Deployment
+✔ Production-Level Monitoring & Visualization
+✔ AWS Cloud Infrastructure Implementation
+
+🧠 Skills Demonstrated
+======================
+
+*   CI/CD Pipeline Design
+    
+*   DevSecOps Implementation
+    
+*   Docker & Container Management
+    
+*   Kubernetes Cluster Management
+    
+*   AWS Cloud Deployment
+    
+*   GitOps Automation
+    
+*   Monitoring & Observability Setup
+    
+*   Infrastructure Configuration & Troubleshooting
+    
+
+📌 Business Impact
+==================
+
+This implementation reduces:
+
+*   Manual deployment errors
+    
+*   Security vulnerabilities in production
+    
+*   Deployment time
+    
+*   Infrastructure inconsistencies
+    
+
+While improving:
+
+*   Reliability
+    
+*   Scalability
+    
+*   Visibility
+    
+*   Automation maturity
